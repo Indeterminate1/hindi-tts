@@ -12,7 +12,12 @@ COPY vakyansh-tts/requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the TTS code
+
+# Copy the TTS code
 COPY vakyansh-tts/ ./vakyansh-tts/
+
+# Copy the API script
+COPY tts_api.py ./
 
 
 # Download and extract Hindi male and female models
